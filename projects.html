@@ -29,6 +29,28 @@
                 <div class="project">
                     <h3>Real-time Multiplayer UNO Game</h3>
                     <p>Engineered a real-time two-player UNO game with joinable game rooms and synchronized gameplay.</p>
+                     <div class="carousel" id="carousel-uno">
+                        <button class="carousel-button prev" onclick="changeSlide(-1, 'carousel-uno')">&#10094;</button>
+                        <div class="carousel-images">
+                            <img src="/pictures/Uno/homepage.png" alt="Uno Screenshot 1">
+                            <img src="/pictures/Uno/login and chatroom.png" alt="Uno Screenshot 2">
+                            <img src="/pictures/Uno/CreateRoom.png" alt="Uno Screenshot 3">
+                            <img src="/pictures/Uno/Gameroom.png" alt="Uno Screenshot 4">
+                            <img src="/pictures/Uno/JoinRoom.png" alt="Uno Screenshot 5">
+                            <img src="/pictures/Uno/player1.png" alt="Uno Screenshot 6">
+                            <img src="/pictures/Uno/player2.png" alt="Uno Screenshot 7">
+                        </div>
+                        <div class="carousel-thumbnails">
+                            <img src="/pictures/Uno/homepage.png" alt="Uno Thumbnail 1" onclick="currentSlide(1, 'carousel-uno')">
+                            <img src="/pictures/Uno/login and chatroom.png" alt="Uno Thumbnail 2" onclick="currentSlide(2, 'carousel-uno')">
+                            <img src="/pictures/Uno/CreateRoom.png" alt="Uno Thumbnail 3" onclick="currentSlide(3, 'carousel-uno')">
+                            <img src="/pictures/Uno/Gameroom.png" alt="Uno Thumbnail 4" onclick="currentSlide(4, 'carousel-uno')">
+                            <img src="/pictures/Uno/JoinRoom.png" alt="Uno Thumbnail 5" onclick="currentSlide(5, 'carousel-uno')">
+                            <img src="/pictures/Uno/player1.png" alt="Uno Thumbnail 6" onclick="currentSlide(6, 'carousel-uno')">
+                            <img src="/pictures/Uno/player2.png" alt="Uno Thumbnail 7" onclick="currentSlide(7, 'carousel-uno')">
+                        </div>
+                        <button class="carousel-button next" onclick="changeSlide(1, 'carousel-uno')">&#10095;</button>
+                    </div>
                     <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Node.js, Express, Socket.io, PostgreSQL</p>
                     <p><strong>Key Features:</strong> Real-time communication, automated game start, immediate game state updates.</p>
                     <a href="https://github.com/shellychen1221/CSC667-Project-Uno" target="_blank">View Project</a>
@@ -36,6 +58,24 @@
                 <div class="project">
                     <h3>Chore Assigner App</h3>
                     <p>Developed an app to streamline the assignment and tracking of household chores and shared expenses among roommates or family members.</p>
+                    <div class="carousel" id="carousel-chore">
+                        <button class="carousel-button prev" onclick="changeSlide(-1, 'carousel-chore')">&#10094;</button>
+                        <div class="carousel-images">
+                            <img src="/pictures/ChoreAssignerApp/homepage.png" alt="Chore Assigner App Screenshot 1">
+                            <img src="/pictures/ChoreAssignerApp/registration.png" alt="Chore Assigner App Screenshot 2">
+                            <img src="/pictures/ChoreAssignerApp/task.png" alt="Chore Assigner App Screenshot 3">
+                            <img src="/pictures/ChoreAssignerApp/memo.png" alt="Chore Assigner App Screenshot 4">
+                            <img src="/pictures/ChoreAssignerApp/chores assigner.png" alt="Chore Assigner App Screenshot 5">
+                        </div>
+                        <div class="carousel-thumbnails">
+                            <img src="/pictures/ChoreAssignerApp/homepage.png" alt="Chore Assigner App Thumbnail 1" onclick="currentSlide(1, 'carousel-chore')">
+                            <img src="/pictures/ChoreAssignerApp/registration.png" alt="Chore Assigner App Thumbnail 2" onclick="currentSlide(2, 'carousel-chore')">
+                            <img src="/pictures/ChoreAssignerApp/task.png" alt="Chore Assigner App Thumbnail 3" onclick="currentSlide(3, 'carousel-chore')">
+                            <img src="/pictures/ChoreAssignerApp/memo.png" alt="Chore Assigner App Thumbnail 4" onclick="currentSlide(4, 'carousel-chore')">
+                            <img src="/pictures/ChoreAssignerApp/chores assigner.png" alt="Chore Assigner App Thumbnail 5" onclick="currentSlide(5, 'carousel-chore')">
+                        </div>
+                        <button class="carousel-button next" onclick="changeSlide(1, 'carousel-chore')">&#10095;</button>
+                    </div>
                     <p><strong>Technologies:</strong> Swift</p>
                     <p><strong>Features:</strong> Task creation and assignment, user registration system, expense tracking.</p>
                     <a href="https://github.com/shellychen1221/CSC680-Project-ChoreAssignerApp" target="_blank">View Project</a>
@@ -43,6 +83,20 @@
                 <div class="project">
                     <h3>Accounting Program</h3>
                     <p>Built an accounting program to manage expenses, set reminders, and perform graph analysis.</p>
+                    <div class="carousel" id="carousel-accounting">
+                        <button class="carousel-button prev" onclick="changeSlide(-1, 'carousel-accounting')">&#10094;</button>
+                        <div class="carousel-images">
+                            <img src="/pictures/AccountingProgram/homepage.png" alt="Accounting Program Screenshot 1">
+                            <img src="/pictures/AccountingProgram/reminder.png" alt="Accounting Program Screenshot 2">
+                            <img src="/pictures/AccountingProgram/chart.png" alt="Accounting Program Screenshot 3">
+                        </div>
+                        <div class="carousel-thumbnails">
+                            <img src="/pictures/AccountingProgram/homepage.png" alt="Accounting Program Thumbnail 1" onclick="currentSlide(1, 'carousel-accounting')">
+                            <img src="/pictures/AccountingProgram/reminder.png" alt="Accounting Program Thumbnail 2" onclick="currentSlide(2, 'carousel-accounting')">
+                            <img src="/pictures/AccountingProgram/chart.png" alt="Accounting Program Thumbnail 3" onclick="currentSlide(3, 'carousel-accounting')">
+                        </div>
+                        <button class="carousel-button next" onclick="changeSlide(1, 'carousel-accounting')">&#10095;</button>
+                    </div>
                     <p><strong>Technologies:</strong> Java, JFreeChart</p>
                     <p><strong>Features:</strong> Expense management, budget reminders, graph analysis.</p>
                     <a href="https://github.com/shellychen1221/Java-Accounting-program" target="_blank">View Project</a>
@@ -55,5 +109,7 @@
             <p>&copy; 2024 Hsin Yu Chen</p>
         </div>
     </footer>
+    <script src="scripts.js"></script>
+
 </body>
 </html>
