@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <meta name="description" content="Showcasing the projects of Hsin Yu Chen, including real-time UNO game, chore assigner app, accounting program, and more.">
-    
+
 </head>
 <body>
     <header>
@@ -32,89 +32,125 @@
                 <h2>Projects</h2>
 
                 <!-- Real-time Multiplayer UNO Game -->
-                <button class="accordion">Real-time Multiplayer UNO Game</button>
-                <div class="panel">
-                    <p>Engineered a real-time two-player UNO game with joinable game rooms and synchronized gameplay.</p>
-                    <div class="carousel" id="carousel-uno">
-                        <button class="carousel-button prev" onclick="changeSlide(-1, 'carousel-uno')">&#10094;</button>
-                        <div class="carousel-images">
-                            <img src="/pictures/Uno/homepage.png" alt="Uno Screenshot 1">
-                            <img src="/pictures/Uno/login_and_chatroom.png" alt="Uno Screenshot 2">
-                            <img src="/pictures/Uno/CreateRoom.png" alt="Uno Screenshot 3">
-                            <img src="/pictures/Uno/Gameroom.png" alt="Uno Screenshot 4">
+                <article class="project">
+                    <button class="accordion">Real-time Multiplayer UNO Game</button>
+                    <div class="panel">
+                        <p>Engineered a real-time two-player UNO game with joinable game rooms and synchronized gameplay.</p>
+                        <div class="carousel" id="carousel-uno">
+                            <button class="carousel-button prev" onclick="changeSlide(-1, 'carousel-uno')">&#10094;</button>
+                            <div class="carousel-images">
+                                <img src="/pictures/Uno/homepage.png" alt="Uno Screenshot 1">
+                                <img src="/pictures/Uno/login and chatroom.png" alt="Uno Screenshot 2">
+                                <img src="/pictures/Uno/CreateRoom.png" alt="Uno Screenshot 3">
+                                <img src="/pictures/Uno/JoinRoom.png" alt="Uno Screenshot 4">
+                                <img src="/pictures/Uno/Gameroom.png" alt="Uno Screenshot 5">
+                                <img src="/pictures/Uno/player1.png" alt="Uno Screenshot 6">
+                                <img src="/pictures/Uno/player2.png" alt="Uno Screenshot 7">
+                            </div>
+                            <div class="carousel-thumbnails">
+                                <img src="/pictures/Uno/homepage.png" alt="Thumbnail 1" onclick="currentSlide(1, 'carousel-uno')">
+                                <img src="/pictures/Uno/login and chatroom.png" alt="Thumbnail 2" onclick="currentSlide(2, 'carousel-uno')">
+                                <img src="/pictures/Uno/CreateRoom.png" alt="Thumbnail 3" onclick="currentSlide(3, 'carousel-uno')">
+                                <img src="/pictures/Uno/JoinRoom.png" alt="Thumbnail 4" onclick="currentSlide(4, 'carousel-uno')">
+                                <img src="/pictures/Uno/Gameroom.png" alt="Thumbnail 5" onclick="currentSlide(5, 'carousel-uno')">
+                                <img src="/pictures/Uno/player1.png" alt="Thumbnail 6" onclick="currentSlide(6, 'carousel-uno')">
+                                <img src="/pictures/Uno/player2.png" alt="Thumbnail 7" onclick="currentSlide(7, 'carousel-uno')">
+                            </div>
+                            <button class="carousel-button next" onclick="changeSlide(1, 'carousel-uno')">&#10095;</button>
                         </div>
-                        <div class="carousel-thumbnails">
-                            <img src="/pictures/Uno/homepage.png" alt="Uno Thumbnail 1" onclick="currentSlide(1, 'carousel-uno')">
-                            <img src="/pictures/Uno/login_and_chatroom.png" alt="Uno Thumbnail 2" onclick="currentSlide(2, 'carousel-uno')">
-                            <img src="/pictures/Uno/CreateRoom.png" alt="Uno Thumbnail 3" onclick="currentSlide(3, 'carousel-uno')">
-                            <img src="/pictures/Uno/Gameroom.png" alt="Uno Thumbnail 4" onclick="currentSlide(4, 'carousel-uno')">
-                        </div>
-                        <button class="carousel-button next" onclick="changeSlide(1, 'carousel-uno')">&#10095;</button>
+                        <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Node.js, Express, Socket.io, PostgreSQL</p>
+                        <a href="https://github.com/shellychen1221/CSC667-Project-Uno" target="_blank">View Project</a>
                     </div>
-                    <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Node.js, Express, Socket.io, PostgreSQL</p>
-                    <a href="https://github.com/shellychen1221/CSC667-Project-Uno" target="_blank">View Project</a>
-                </div>
+                </article>
 
                 <!-- Chore Assigner App -->
-                <button class="accordion">Chore Assigner App</button>
-                <div class="panel">
-                    <p>Developed an app to streamline the assignment and tracking of household chores and shared expenses.</p>
-                    <div class="carousel" id="carousel-chore">
-                        <button class="carousel-button prev" onclick="changeSlide(-1, 'carousel-chore')">&#10094;</button>
-                        <div class="carousel-images">
-                            <img src="/pictures/ChoreAssignerApp/homepage.png" alt="Chore Assigner Screenshot 1">
-                            <img src="/pictures/ChoreAssignerApp/registration.png" alt="Chore Assigner Screenshot 2">
+                <article class="project">
+                    <button class="accordion">Chore Assigner App</button>
+                    <div class="panel">
+                        <p>Developed an app to streamline the assignment and tracking of household chores and shared expenses.</p>
+                        <div class="carousel" id="carousel-chore">
+                            <button class="carousel-button prev" onclick="changeSlide(-1, 'carousel-chore')">&#10094;</button>
+                            <div class="carousel-images">
+                                <img src="/pictures/ChoreAssignerApp/homepage.png" alt="Chore Assigner Screenshot 1">
+                                <img src="/pictures/ChoreAssignerApp/registration.png" alt="Chore Assigner Screenshot 2">
+                                <img src="/pictures/ChoreAssignerApp/memo.png" alt="Chore Assigner Screenshot 3">
+                                <img src="/pictures/ChoreAssignerApp/task.png" alt="Chore Assigner Screenshot 4">
+                                <img src="/pictures/ChoreAssignerApp/chores assigner.png" alt="Chore Assigner Screenshot 5">
+                            </div>
+                            <div class="carousel-thumbnails">
+                                <img src="/pictures/ChoreAssignerApp/homepage.png" alt="Thumbnail 1" onclick="currentSlide(1, 'carousel-chore')">
+                                <img src="/pictures/ChoreAssignerApp/registration.png" alt="Thumbnail 2" onclick="currentSlide(2, 'carousel-chore')">
+                                <img src="/pictures/ChoreAssignerApp/memo.png" alt="Thumbnail 3" onclick="currentSlide(3, 'carousel-chore')">
+                                <img src="/pictures/ChoreAssignerApp/task.png" alt="Thumbnail 4" onclick="currentSlide(4, 'carousel-chore')">
+                                <img src="/pictures/ChoreAssignerApp/chores assigner.png" alt="Thumbnail 5" onclick="currentSlide(5, 'carousel-chore')">
+                            </div>
+                            <button class="carousel-button next" onclick="changeSlide(1, 'carousel-chore')">&#10095;</button>
                         </div>
-                        <div class="carousel-thumbnails">
-                            <img src="/pictures/ChoreAssignerApp/homepage.png" alt="Chore Assigner Thumbnail 1" onclick="currentSlide(1, 'carousel-chore')">
-                            <img src="/pictures/ChoreAssignerApp/registration.png" alt="Chore Assigner Thumbnail 2" onclick="currentSlide(2, 'carousel-chore')">
-                        </div>
-                        <button class="carousel-button next" onclick="changeSlide(1, 'carousel-chore')">&#10095;</button>
+                        <p><strong>Technologies:</strong> Swift</p>
+                        <p><strong>Features:</strong> Task creation, user registration, expense tracking.</p>
+                        <a href="https://github.com/shellychen1221/CSC680-Project-ChoreAssignerApp" target="_blank">View Project</a>
                     </div>
-                    <p><strong>Technologies:</strong> Swift</p>
-                    <p><strong>Features:</strong> Task creation, user registration, expense tracking.</p>
-                    <a href="https://github.com/shellychen1221/CSC680-Project-ChoreAssignerApp" target="_blank">View Project</a>
-                </div>
+                </article>
 
                 <!-- Accounting Program -->
-                <button class="accordion">Accounting Program</button>
-                <div class="panel">
-                    <p>Built an accounting program to manage expenses, set reminders, and perform graph analysis.</p>
-                    <div class="carousel" id="carousel-accounting">
-                        <button class="carousel-button prev" onclick="changeSlide(-1, 'carousel-accounting')">&#10094;</button>
-                        <div class="carousel-images">
-                            <img src="/pictures/AccountingProgram/homepage.png" alt="Accounting Program Screenshot 1">
-                            <img src="/pictures/AccountingProgram/reminder.png" alt="Accounting Program Screenshot 2">
+                <article class="project">
+                    <button class="accordion">Accounting Program</button>
+                    <div class="panel">
+                        <p>Built an accounting program to manage expenses, set reminders, and perform graph analysis.</p>
+                        <div class="carousel" id="carousel-accounting">
+                            <button class="carousel-button prev" onclick="changeSlide(-1, 'carousel-accounting')">&#10094;</button>
+                            <div class="carousel-images">
+                                <img src="/pictures/AccountingProgram/homepage.png" alt="Accounting Program Screenshot 1">
+                                <img src="/pictures/AccountingProgram/lists.png" alt="Accounting Program Screenshot 2">
+                                <img src="/pictures/AccountingProgram/reminder.png" alt="Accounting Program Screenshot 3">
+                                <img src="/pictures/AccountingProgram/chart.png" alt="Accounting Program Screenshot 4">
+                            </div>
+                            <div class="carousel-thumbnails">
+                                <img src="/pictures/AccountingProgram/homepage.png" alt="Thumbnail 1" onclick="currentSlide(1, 'carousel-accounting')">
+                                <img src="/pictures/AccountingProgram/lists.png" alt="Thumbnail 2" onclick="currentSlide(2, 'carousel-accounting')">
+                                <img src="/pictures/AccountingProgram/reminder.png" alt="Thumbnail 3" onclick="currentSlide(3, 'carousel-accounting')">
+                                <img src="/pictures/AccountingProgram/chart.png" alt="Thumbnail 4" onclick="currentSlide(4, 'carousel-accounting')">
+                            </div>
+                            <button class="carousel-button next" onclick="changeSlide(1, 'carousel-accounting')">&#10095;</button>
                         </div>
-                        <div class="carousel-thumbnails">
-                            <img src="/pictures/AccountingProgram/homepage.png" alt="Accounting Program Thumbnail 1" onclick="currentSlide(1, 'carousel-accounting')">
-                            <img src="/pictures/AccountingProgram/reminder.png" alt="Accounting Program Thumbnail 2" onclick="currentSlide(2, 'carousel-accounting')">
-                        </div>
-                        <button class="carousel-button next" onclick="changeSlide(1, 'carousel-accounting')">&#10095;</button>
+                        <p><strong>Technologies:</strong> Java, JFreeChart</p>
+                        <a href="https://github.com/shellychen1221/Java-Accounting-program" target="_blank">View Project</a>
                     </div>
-                    <p><strong>Technologies:</strong> Java, JFreeChart</p>
-                    <a href="https://github.com/shellychen1221/Java-Accounting-program" target="_blank">View Project</a>
-                </div>
+                </article>
+                <!-- Road Sign Detection -->
+                <article class="project">
+                    <button class="accordion">Road Sign Detection</button>
+                    <div class="panel">
+                        <p>This project implements road sign detection using two approaches: Convolutional Neural Networks (CNNs) for image classification and YOLO (You Only Look Once) for real-time object detection. The project includes a comparison of these methods based on their performance, accuracy, and application scenarios.</p>
+                        <iframe src="/Project/road_sign_detection.html" width="100%" height="400"></iframe>
+                    </div>
+                </article>
 
-                <!-- JupyterLab Projects -->
-                <button class="accordion">Quantum Circuit Simulations - CSC647</button>
-                <div class="panel">
-                    <p>This project involves simulating quantum circuits and understanding quantum gates and algorithms.</p>
-                    <iframe src="/Project/CodingProject1.html" width="100%" height="400"></iframe>
-                    <iframe src="/Project/CodingProject2.html" width="100%" height="400"></iframe>
-                    <iframe src="/Project/CodingProject3.html" width="100%" height="400"></iframe>
-                </div>
+                <!-- Quantum Circuit Simulations -->
+                <article class="project">
+                    <button class="accordion">Quantum Circuit Simulations - CSC647</button>
+                    <div class="panel">
+                        <p>This project involves simulating quantum circuits and understanding quantum gates and algorithms.</p>
+                        <iframe src="/Project/CodingProject1.html" width="100%" height="400"></iframe>
+                        <iframe src="/Project/CodingProject2.html" width="100%" height="400"></iframe>
+                        <iframe src="/Project/CodingProject3.html" width="100%" height="400"></iframe>
+                    </div>
+                </article>
 
-                <button class="accordion">X-ray Image Classification - CSC665</button>
-                <div class="panel">
-                    <p>This project focuses on the classification of X-ray images using clustering techniques and neural networks.</p>
-                    <iframe src="/Project/XRayTest.html" width="100%" height="400"></iframe>
-                    <iframe src="/Project/x_ray_clustering.html" width="100%" height="400"></iframe>
-                    <iframe src="/Project/MLP_and_CNN.html" width="100%" height="400"></iframe>
-                </div>
+                <!-- X-ray Image Classification -->
+                <article class="project">
+                    <button class="accordion">X-ray Image Classification - CSC665</button>
+                    <div class="panel">
+                        <p>This project focuses on the classification of X-ray images using clustering techniques and neural networks.</p>
+                        <iframe src="/Project/XRayTest.html" width="100%" height="400"></iframe>
+                        <iframe src="/Project/x_ray_clustering.html" width="100%" height="400"></iframe>
+                        <iframe src="/Project/MLP_and_CNN.html" width="100%" height="400"></iframe>
+                    </div>
+                </article>
+
             </section>
         </div>
-    </main>
+    </main> 
     <footer>
         <div class="container">
             <p>&copy; 2024 Hsin Yu Chen</p>
