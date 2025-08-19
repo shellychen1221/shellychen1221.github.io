@@ -36,41 +36,6 @@ toggleBtn?.addEventListener('click', () => {
     localStorage.setItem(THEME_KEY, next);
 });
 
-function setupMobileCollapsibles() {
-    const isMobile = window.matchMedia('(max-width: 768px)').matches;
-    document.querySelectorAll('[data-mobile-collapsible]').forEach(card => {
-        const toggle = card.querySelector('.card-toggle');
-        const back = card.querySelector('.flip-card-back');
-        
-        if (!toggle || !back) {
-            console.warn('Flip card is missing required elements:', card);
-            return;
-        }
-
-        if (isMobile) {
-            toggle.style.display = 'inline-block';
-            back.style.display = 'none';
-            toggle.setAttribute('aria-expanded', 'false');
-            toggle.onclick = null;
-
-            toggle.onclick = () => {
-                const isOpen = back.style.display === 'block';
-                back.style.display = isOpen ? 'none' : 'block';
-                toggle.setAttribute('aria-expanded', String(!isOpen));
-                toggle.textContent = isOpen ? 'Hide' : 'Details';
-            };
-        } else {
-            toggle.style.display = 'none';
-            back.style.display = '';
-            toggle.setAttribute('aria-expanded', 'false');
-            toggle.textContent = 'Details';
-        }
-    });
-}
-
-document.addEventListener('DOMContentLoaded', setupMobileCollapsibles);
-window.addEventListener('resize', setupMobileCollapsibles);
-
 document.addEventListener('click', (e) => {
     const isMobile = window.matchMedia('(max-width: 768px)').matches;
     if (!isMobile) return;

@@ -326,25 +326,6 @@ section {
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
-    .flip-card:hover .flip-card-inner {
-        transform: none;
-    }
-    .flip-card-inner {
-        height: auto;
-    }
-    .flip-card-front,
-    .flip-card-back {
-        position: static;
-        transform: none;
-        backface-visibility: visible;
-    }
-    .flip-card-back {
-        display: none;
-        margin-top: .75rem;
-    }
-}
-
 .project {
     margin-bottom: 1rem;
 }
