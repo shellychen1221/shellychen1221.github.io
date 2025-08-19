@@ -327,21 +327,17 @@ section {
 }
 
 @media (max-width: 768px) {
+    .flip-card:hover .flip-card-inner {
+        transform: none;
+    }
     .flip-card-inner {
-        transform: none !important;
         height: auto;
     }
     .flip-card-front,
     .flip-card-back {
         position: static;
         transform: none;
-    }
-    .flip-card-front,
-    .flip-card-back {
         backface-visibility: visible;
-    }
-    .card-toggle {
-        display: none;
     }
     .flip-card-back {
         display: none;
