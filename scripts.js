@@ -41,26 +41,34 @@ function setupMobileCollapsibles() {
     document.querySelectorAll('[data-mobile-collapsible]').forEach(card => {
         const toggle = card.querySelector('.card-toggle');
         const back = card.querySelector('.flip-card-back');
-        if (!toggle || !back) return;
+        
+        if (!toggle || !back) {
+            console.warn('Flip card is missing required elements:', card);
+            return;
+        }
 
         if (isMobile) {
             toggle.style.display = 'inline-block';
-            toggle.setAttribute('aria-expanded', 'false');
             back.style.display = 'none';
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.onclick = null;
 
             toggle.onclick = () => {
-                const open = back.style.display === 'block';
-                back.style.display = open ? 'none' : 'block';
-                toggle.setAttribute('aria-expanded', String(!open));
-                toggle.textContent = open ? 'Details' : 'Hide';
+                const isOpen = back.style.display === 'block';
+                back.style.display = isOpen ? 'none' : 'block';
+                toggle.setAttribute('aria-expanded', String(!isOpen));
+                toggle.textContent = isOpen ? 'Hide' : 'Details';
             };
         } else {
             toggle.style.display = 'none';
             back.style.display = '';
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.textContent = 'Details';
         }
     });
 }
-setupMobileCollapsibles();
+
+document.addEventListener('DOMContentLoaded', setupMobileCollapsibles);
 window.addEventListener('resize', setupMobileCollapsibles);
 
 document.addEventListener('click', (e) => {
