@@ -327,8 +327,10 @@ section {
 }
 
 @media (max-width: 768px) {
+    .flip-card:hover .flip-card-inner {
+        transform: none;
+    }
     .flip-card-inner {
-        transform: none !important;
         height: auto;
     }
     .flip-card-front,
@@ -336,11 +338,10 @@ section {
         position: static;
         transform: none;
         backface-visibility: visible;
-        display: block; 
     }
-
-    .card-toggle {
-        display: none !important;
+    .flip-card-back {
+        display: none;
+        margin-top: .75rem;
     }
 }
 
