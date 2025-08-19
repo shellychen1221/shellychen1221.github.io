@@ -44,19 +44,19 @@ function setupMobileCollapsibles() {
         if (!toggle || !back) return;
 
         if (isMobile) {
-        toggle.style.display = 'inline-block';
-        toggle.setAttribute('aria-expanded', 'false');
-        back.style.display = 'none';
+            toggle.style.display = 'inline-block';
+            toggle.setAttribute('aria-expanded', 'false');
+            back.style.display = 'none';
 
-        toggle.onclick = () => {
-            const open = back.style.display === 'block';
-            back.style.display = open ? 'none' : 'block';
-            toggle.setAttribute('aria-expanded', String(!open));
-            toggle.textContent = open ? 'Details' : 'Hide';
-        };
+            toggle.onclick = () => {
+                const open = back.style.display === 'block';
+                back.style.display = open ? 'none' : 'block';
+                toggle.setAttribute('aria-expanded', String(!open));
+                toggle.textContent = open ? 'Details' : 'Hide';
+            };
         } else {
-        toggle.style.display = 'none';
-        back.style.display = '';
+            toggle.style.display = 'none';
+            back.style.display = '';
         }
     });
 }
