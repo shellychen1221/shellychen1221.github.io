@@ -1,70 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hsin Yu Chen - Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Hsin Yu Chen — Personal Website</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
+    <a class="skip-link" href="#about">Skip to content</a>
+
+    <header class="reveal" id="home">
         <div class="container">
-            <h1>Hsin Yu Chen</h1>
-            <p>Recent Computer Science graduate passionate about using technology to solve problems and drive innovation.</p>
-            <p>Contact: <a href="mailto:shelly61017@gmail.com">shelly61017@gmail.com</a> | <a href="tel:+14154123539">415-412-3539</a></p>
+        <h1>Hsin Yu <span>Chen</span></h1>
+        <p class="subtitle">Incoming MSCS @ Northwestern • Building reliable software with a focus on AI/ML</p>
+        <p class="contact">
+            <a href="mailto:shelly61017@gmail.com"><i class="fa-solid fa-envelope"></i> shelly61017@gmail.com</a>
+            <span class="sep">•</span>
+            <a href="tel:+14154123539"><i class="fa-solid fa-phone"></i> (+1) 415-412-3539</a>
+        </p>
+        <p class="links">
+            <a href="https://www.linkedin.com/in/hsin-yu-chen2001" target="_blank" rel="noopener">LinkedIn</a>
+            <span class="sep">•</span>
+            <a href="https://github.com/shellychen1221" target="_blank" rel="noopener">GitHub</a>
+        </p>
         </div>
     </header>
-    
-    <nav>
+
+    <nav class="site-nav">
         <div class="container">
-            <button onclick="location.href='index.html'">Home</button>
-            <button onclick="location.href='projects.html'">Projects</button>
+        <div class="nav-left">
+            <a class="brand" href="#home" aria-label="Go to top">HYC</a>
+            <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+        </div>
         </div>
     </nav>
 
     <main>
         <div class="container">
-            <section id="about">
-                <h2>Welcome to my personal website.</h2>
-            </section>
-            <section id="education">
-                <h2>Education</h2>
-                <div class="education-item">
-                    <h3>San Francisco State University</h3>
-                    <p>Bachelor of Science in Computer Science | GPA: 3.73/4.0</p>
-                    <p>Aug 2022 ~ May 2024</p>
-                    <p><strong>Honors:</strong> Dean’s list</p>
-                    <p><strong>Relevant Coursework:</strong> Operating System Principles, Analysis of Algorithms, Internet Application Design, Introduction to Database Systems, Software Engineering, Artificial Intelligence</p>
+
+        <section id="about" class="reveal">
+            <h2>About</h2>
+            <div class="about-card">
+            <p>I’m an incoming Master’s student in Computer Science at Northwestern University with a strong background in software development and a growing focus on AI and machine learning.</p>
+            <p>Over the past few years, I’ve built real-time applications, automated workflows, and contributed to projects that improved both efficiency and user experience.</p>
+            <p>Having studied and worked across Taiwan and the US, I bring adaptability, curiosity, and a collaborative mindset. I’m eager to take on projects bridging research and real-world applications.</p>
+            </div>
+        </section>
+
+        <section id="education" class="reveal">
+            <h2>Education</h2>
+            <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                <h3>Northwestern University</h3>
+                <p>Master of Science in Computer Science | Currently Enrolled</p>
+                <p>Expected Graduation: Dec 2026</p>
                 </div>
-                <div class="education-item">
-                    <h3>Feng Chia University</h3>
-                    <p>Bachelor of Science in Computer Science | GPA: 4.15/4.3</p>
-                    <p>Sep 2020 ~ June 2022</p>
-                    <p><strong>Honors:</strong> Dean’s list</p>
-                    <p><strong>Relevant Coursework:</strong> Building a Mobile Apps, Data Structure, Introduction to Software Lab</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                <h3>San Francisco State University</h3>
+                <p>B.S. in Computer Science | GPA: 3.73/4.0</p>
+                <p>Graduated May 2024 | Dean’s List</p>
                 </div>
-            </section>
-            <section id="skills">
-                <h2>Skills</h2>
-                <ul>
-                    <li>Programming Languages: C++, Python, Java, Swift</li>
-                    <li>Web Technologies: HTML, CSS, JavaScript</li>
-                    <li>Tools: Node.js, PostgreSQL, GitHub</li>
-                    <li>Other skills: Teamwork and Collaboration, Problem-Solving, Adaptability, Time Management</li>
-                </ul>
-            </section>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                <h3>Feng Chia University</h3>
+                <p>B.S. in Computer Science | GPA: 4.0/4.3</p>
+                <p>Graduated June 2022 | Dean’s List, Academic Excellence Award</p>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section id="experience" class="reveal">
+            <h2>Work Experience</h2>
+            <div class="flip-card-grid">
+            <article class="flip-card" data-mobile-collapsible>
+                <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h3>Inventec Appliances Corporation</h3>
+                    <p><strong>Software QA Engineer</strong></p>
+                    <p>Dec 2024 – Jul 2025</p>
+                    <button class="card-toggle" aria-expanded="false">Details</button>
+                </div>
+                <div class="flip-card-back">
+                    <h4>Responsibilities</h4>
+                    <ul>
+                    <li>Supported software testing and System Integration Testing (SIT) for infusion pumps.</li>
+                    <li>Assisted pre-certification activities and documentation.</li>
+                    </ul>
+                </div>
+                </div>
+            </article>
+
+            <article class="flip-card" data-mobile-collapsible>
+                <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h3>Hong Song National Co., Ltd.</h3>
+                    <p><strong>Software Developer Intern</strong></p>
+                    <p>Jun 2023 – Aug 2023</p>
+                    <button class="card-toggle" aria-expanded="false">Details</button>
+                </div>
+                <div class="flip-card-back">
+                    <h4>Impact</h4>
+                    <ul>
+                    <li>Optimized sales software; +20% productivity, saved 50+ hours/month.</li>
+                    <li>Automated monthly sales reports with Python.</li>
+                    </ul>
+                </div>
+                </div>
+            </article>
+            </div>
+        </section>
+
+        <section id="skills" class="reveal">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fas fa-laptop-code"></i>
+                <h4>Programming Languages</h4>
+                <p>C++, Python, Java, Swift, PHP, MIPS</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-globe"></i>
+                <h4>Web Technologies</h4>
+                <p>HTML, CSS, JS, Node.js, Express.js, React.js</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <h4>Databases & Tools</h4>
+                <p>MySQL, PostgreSQL, Git & GitHub</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-brain"></i>
+                <h4>AI & Machine Learning</h4>
+                <p>TensorFlow, PyTorch, Scikit-learn, YOLO, CNNs</p>
+            </div>
+            </div>
+        </section>
+
         </div>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Hsin Yu Chen</p>
+        <p>&copy; 2025 Hsin Yu Chen</p>
         </div>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="scripts.js" defer></script>
 </body>
 </html>
